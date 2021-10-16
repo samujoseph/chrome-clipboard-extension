@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "Clipboard Extension",
+  "short_name": "Clipboard Extension",
+  "version": "0.1",
+  "description": "Adds a copy-paste clipboard in browser",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "clipboardRead"
+  ],
+  "icons": {
+    "16": "icons/clipboard_icon_16.png",
+    "32": "icons/clipboard_icon_32.png",
+    "64": "icons/clipboard_icon_64.png",
+    "128": "icons/clipboard_icon_128.png"
+  },
+  "options_ui": {
+    "page": "browser-action/index.html?page=options",
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_popup": "browser-action/index.html?page=browserAction"
+  },
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ]
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+V",
+        "windows": "Ctrl+Shift+V",
+        "mac": "Command+Shift+V",
+        "chromeos": "Ctrl+Shift+V",
+        "linux": "Ctrl+Shift+V"
+      }
+    }
+  }
+}

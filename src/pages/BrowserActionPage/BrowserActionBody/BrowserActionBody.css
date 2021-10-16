@@ -1,0 +1,13 @@
+.browserActionBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 14px;
+    color: var(--contentForegroundColor);
+    overflow: auto;
+}
+
+.browserActionBody:focus {
+    outline: none;
+}

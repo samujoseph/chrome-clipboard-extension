@@ -1,0 +1,57 @@
+.optionsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.optionBody {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.optionsContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--dividerColor);
+}
+
+.form {
+    color: var(--contentForegroundColor);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form > div {
+    margin-bottom: 10px;
+}
+
+.textField {
+    margin: 0 6px;
+    color: var(--contentForegroundColor);
+    background: var(--textFieldBackgroundColor);
+    border: 1px solid var(--textFieldBorderColor);
+}
+
+.selectDropdown {
+    margin: 0 6px;
+}
+
+.checkbox {
+    margin: 0 6px 0 0;
+}
+
+.optionsFooter {
+    border-top: 1px solid var(--dividerColor);
+    padding-top: 10px;
+}
+
+.validationMessage.warning {
+    font-size: .8em;
+    color: var(--warningColor);
+}

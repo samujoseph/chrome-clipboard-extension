@@ -1,0 +1,48 @@
+
+.clipboardItemContainer {
+    /*border-bottom: 1px solid rgba(204, 204, 204, 0.5);*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1em;
+    padding: 1px 4px;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.clipboardItemContainer:last-child {
+    border-bottom: 0;
+}
+
+.clipboardItemContainer:focus {
+    outline: none;
+}
+
+.clipboardTextContainer {
+    width: calc(100% - 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.activeClipboardItem {
+    background: var(--selectionBackgroundColor);
+    color: var(--selectionForegroundColor);
+    display: flex;
+    align-items: flex-end;
+}
+
+.clipboardIcon {
+    transform: scaleX(-1);
+}
+
+.lineNumber {
+    color: var(--inactiveLabelColor);
+    margin-right: 6px;
+    font-weight: 500;
+}
+
+.activeClipboardItem .lineNumber {
+    color: var(--selectionForegroundColor);
+}

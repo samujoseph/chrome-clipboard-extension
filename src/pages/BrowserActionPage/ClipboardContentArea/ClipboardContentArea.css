@@ -1,0 +1,9 @@
+.clipboardContentArea {
+    background: var(--contentBackgroundColor);
+    min-height: 60px;
+    max-height: 120px;
+    overflow: auto;
+    white-space: pre;
+    margin-top: 6px;
+    padding: 0 4px;
+}

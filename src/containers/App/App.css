@@ -1,0 +1,53 @@
+:root {
+
+    /* Action colors */
+    --warningColor: #D6BF55;
+    --errorColor: #FF6B68;
+    --successColor: #A8C023;
+
+    /* Window variables */
+    --headerBackground: #f6f6f6;
+    --appFontSize: 14px;
+    --appMinWidth: 300px;
+    --appMaxWidth: 400px;
+    --appMinHeight: 300px;
+    --appMaxHeight: 600px;
+    --appPadding: 10px;
+    --appBackgroundColor: #3C3F41;
+    --contentForegroundColor: #A9B7C6;
+    --contentBackgroundColor: #2B2B2B;
+    --selectionForegroundColor: #fff;
+    --selectionBackgroundColor: #214283;
+    --inactiveLabelColor: #777777;
+    --dividerColor: #323232;
+
+    /* Button variables */
+    --buttonTextColor: #bbbbbb;
+    --buttonBackgroundColor: #4c5052;
+    --defaultButtonBackgroundColor: #365880;
+    --buttonBorderColor: #5e6060;
+    --buttonFocusedBorderColor: #466d94;
+    --defaultButtonFocusedBorderColor: #4c708c;
+    --buttonHeight: 24px;
+    --buttonBorderRadius: 3px;
+    --buttonBorderWidth: 1px;
+    --buttonFontSize: 14px;
+    --buttonFontWeight: 500;
+
+    /* Text Input field variables */
+    --textFieldBorderColor: #646464;
+    --textFieldBackgroundColor: #45494A;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--appBackgroundColor);
+    min-width: var(--appMinWidth);
+    max-width: var(--appMaxWidth);
+    min-height: var(--appMinHeight);
+    max-height: var(--appMaxHeight);
+    padding: var(--appPadding);
+    font-size: var(--appFontSize);
+}

@@ -1,0 +1,28 @@
+.button {
+    color: var(--buttonTextColor);
+    background: var(--buttonBackgroundColor);
+    border: var(--buttonBorderWidth) solid var(--buttonBorderColor);
+    height: var(--buttonHeight);
+    border-radius: var(--buttonBorderRadius);
+    margin-left: 4px;
+    font-size: var(--buttonFontSize);
+    font-weight: var(--buttonFontWeight);
+}
+
+.button:focus {
+    outline: none;
+    border: var(--buttonFocusedBorderColor);
+}
+
+.button.defaultButton {
+    background: var(--defaultButtonBackgroundColor);
+}
+
+.button.defaultButton:focus {
+    border: var(--defaultButtonBackgroundColor);
+}
+
+.button.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}

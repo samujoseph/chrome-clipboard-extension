@@ -1,0 +1,15 @@
+
+.footerActionItems {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.footerIcon:hover {
+    fill: var(--contentForegroundColor);
+}
+
+.footerIcon:focus {
+
+}
